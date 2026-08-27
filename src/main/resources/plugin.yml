@@ -1,0 +1,8 @@
+name: AuthCord
+version: 0.1.1
+main: org.authcord.authwhitelist.AuthCord
+api-version: '1.21'
+folia-supported: true
+commands:
+  getcode:
+    description: Get Code to Link Discord

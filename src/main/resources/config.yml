@@ -1,0 +1,36 @@
+discord:
+  token: "token"
+  guild-id: "guild id"
+
+settings:
+  # ru/en console output
+  language: "en"
+  auth-mode: "OFFLINE" #ONLINE/OFFLINE
+  code-expiration-minutes: 5
+  request-cooldown-seconds: 30
+  discord-invite-url: "https://discord.gg/your-invite"
+
+messages:
+  in-game:
+    kick-online: "<red>You are not on the whitelist!</red>\n<white>Your code: <yellow>%code%</yellow></white>\n<gray>Verify it in our Discord server > <blue><underlined>%url%</underlined></blue></gray>"
+    not-registered: "<red>You are not registered!</red>\n<white>Enter <yellow>/getcode</yellow> and confirm it in </white><click:open_url:'%url%'><hover:show_text:'<aqua>Open Discord Link</aqua>'><blue>[Discord]</blue></hover></click>"
+    action-blocked: "<red>To play you need to confirm Discord: </red><click:open_url:'%url%'><hover:show_text:'<aqua>Join our Discord</aqua>'><blue><underlined>[Click here]</underlined></blue></hover></click>"
+    new-ip: "<red>A new IP address has been detected!</red>\n<white>For security reasons, enter <yellow>/getcode</yellow> and confirm your login via Discord.</white>"
+    auth-success: "<green>IP authentication successful!</green>"
+    getcode-success: "<white>Your code: <yellow>%code%</yellow></white>\n<gray>Send <aqua>/verify %code%</aqua> in Discord.</gray>"
+    verify-success: "<green>Authentication successful!</green> <white>Your IP address has been saved.</white>"
+    cooldown: "<red>Please wait <yellow>%time%</yellow> seconds before requesting another code!</red>"
+    code-expired: "<red>The code has expired! Request a new one in-game.</red>"
+
+  discord:
+    discord-already-used: "This Discord account is already linked!"
+    invalid-code: "Invalid or expired code!"
+    already-linked: "This username is already linked to another Discord user!"
+    verify-success: "Account **%player%** successfully verified!"
+    player-offline: "The player must be online on the server during verification!"
+    dm-alert: |
+      **ATTENTION! LOGIN ATTEMPT!**
+      Someone is attempting to log in to your Minecraft account **%player%**. **IP Address:** `%ip%`
+  
+      **If this is you:** Type `/getcode` in-game and confirm the new IP using the `/verify` command on the Discord server.
+      **If this is NOT you:** Simply ignore this message. The intruder has been frozen on the server and cannot do anything!
